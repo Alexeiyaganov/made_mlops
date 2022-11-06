@@ -3,6 +3,12 @@ ml_project
 
 homework 1
 
+RUN TRAIN:
+
+python -m src.train_pipeline configs/train_config.yaml
+
+
+
 Project Organization
 ------------
 
