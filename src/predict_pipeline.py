@@ -28,6 +28,7 @@ def run_predict_pipeline(predict_pipeline_params):
     logger.info(f"start predict pipeline with params {predict_pipeline_params}")
     logger.info("Data loading")
     data = read_data(predict_pipeline_params.input_data_path)
+    data.drop(columns=['condition'], inplace=True)
     logger.info(f"data.shape is {data.shape}")
 
     model = load_model(predict_pipeline_params.model_path)

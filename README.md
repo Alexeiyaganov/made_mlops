@@ -7,6 +7,10 @@ RUN TRAIN:
 
 python -m src.train_pipeline configs/train_config.yaml
 
+RUN PREDICT:
+
+python -m src.predict_pipeline configs/predict_config.yaml
+
 
 
 Project Organization
